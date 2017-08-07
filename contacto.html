@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Tatuajes - Los Inkers Málaga</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="author" content="Pablo Garcia">
+<link rel="author" PERFIL PERSONAL href="garciandres.15@gmail.com"/>
+<meta name="description" content="Estudio de tatuaje y piercing Los Inkers situado en Teatinos (Málaga), diseños originales espectaculares y máxima calidad en trabajo y resultados.">
+<meta name="keywords" content="Tatuajes, piercing, Málaga, Teatinos, Tattoo, Diseño, Arte" />
+<link rel="shortcut icon" href="./images/favicon.ico"/>
+<link href="http://fonts.googleapis.com/css?family=Kotta+One|Cantarell:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive-full-background-contacto.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="css/presentational-only.js"></script>
+</head>
+<script>
+	$(document).ready(function(){
+		$(".slide-content").animate({
+			right: parseInt($(".slide-content").css("right"))== 0 ?"-="+$(".slide-content").outerWidth() : 0
+		},800);
+		$(".contact-form").submit(function(){
+			$(".contact-form").css("opacity", "0");
+			$(".contact-form").css("display", "none");
+			$(".sendConfirm").css("display", "block");
+			$(".sendConfirm").css("opacity", "1");
+		});
+		$(".slideopen").click(function() {
+                    if($(".slideopen").css("width") === "60px") { //mobile version
+			$(".slideopen").css("margin", "70px 0 0 -400px");
+			$(".slidemenu").css("margin", "10px 0 0 10px").delay(900);
+                    } else { //desktop version
+                       $(".slideopen").css("margin", "150px 0 0 -400px");
+		       $(".slidemenu").css("margin", "100px 0 0 10px").delay(900);
+                    }
+		});
+		$(".logo").click(function() {
+                    if($(".slideopen").css("width") === "60px") { //mobile version
+			$(".slidemenu").css("margin", "10px 0 0 -400px");
+			$(".slideopen").css("margin", "70px 0 0 5px").delay(900);
+                    } else { //desktop version
+                        $(".slidemenu").css("margin", "100px 0 0 -400px");
+			$(".slideopen").css("margin", "150px 0 0 5px").delay(900);
+                    }
+		});
+	});
+</script>
+<body>
+  <div class="filter"></div>
+  <header class="container">
+    <section class="content">
+	<!-- Left Menu -->
+	<div class="slideopen"></div>
+	<div class="slidemenu">
+		<div class="logo">
+			<img class="logoimage" alt="logo" src="./images/logo.jpg">
+		</div>
+		<div class="menu">
+			<ul id="main-menu" class="sf-menu">
+				<li id="menu-item-1" class="menu-item">
+					<a href="index">
+						<div class="menu-title">Inicio</div>
+						<div class="menu-subtit">bienvenidos a Los Inkers</div>
+					</a>
+				</li>
+				<li id="menu-item-2" class="menu-item">
+					<a href="artistas">
+						<div class="menu-title">Artistas</div>
+						<div class="menu-subtit">conoce a Cristian y El Subi</div>
+					</a>
+				</li>
+				<li id="menu-item-3" class="menu-item">
+					<a href="tienda">
+						<div class="menu-title">Tienda</div>
+						<div class="menu-subtit">mucho más que tinta</div>
+					</a>
+				</li>
+				<li id="menu-item-4" class="menu-item current-menu-item">
+					<a href="contacto">
+						<div class="menu-title">Contacto</div>
+						<div class="menu-subtit">estamos a tu disposición</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="slide-content">
+		<div class="contact-content">
+			<div class="head">
+				<h1>Contacta con nosotros</h1>
+				<p>Consulta información o pide tu cita aquí</p>
+			</div>
+			<div class="left">
+	    		<form action="mailto.php" method="post" class="contact-form">
+		      		<input type="text" name="name" class="form-input" placeholder="Nombre (obligatorio)" required />
+		  			<input type="email" name="email" class="form-input" placeholder="Email (obligatorio)" required />
+		      		<input type="text" name="subject" class="form-input" placeholder="Asunto (optional)" />
+		      		<textarea name="message" class="form-input"  placeholder="Mensaje (obligatorio)" required></textarea>
+		      		<input class="contact-button" type="submit" value="Enviar mensaje" />
+	    		</form>
+	    		<div class="sendConfirm" style="padding-top:40px">
+					<img class="reply" src="./images/tick.png">
+					<h2>Mensaje enviado</h2>
+					<h2>Te contestaremos tan pronto como nos sea posible</h2>
+				</div>
+    		</div>
+    		<div class="right">
+				<iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d799.493571885221!2d-4.476055700000001!3d36.72317650000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f73438969787%3A0xb44ef2733ad169a!2sCalle+Jano%2C+7%2C+29010+M%C3%A1laga!5e1!3m2!1ses!2ses!4v1426372234580"></iframe>
+				<div class="info"><img class="little" src="./images/little-fb.png"><a class="info-little">Facebook: Los Inkers</a></div>
+				<div class="info"><img class="little" src="./images/little-tw.png"><a class="info-little">Twitter: @LosInkers</a></div>
+				<div class="info"><img class="little" src="./images/little-in.png"><a class="info-little">Instagram: @losinkers</a></div>
+				<div class="info"><img class="little" src="./images/little-mail.png"><a class="info-little">Mail: losinkers@gmail.com</a></div>
+				<div class="info"><img class="little" src="./images/little-clock.png"><a class="info-little">11h - 14h, 17h - 21h</a></div>
+			</div>
+		</div>
+	</div>
+	<nav class="navbar">
+		<div class="telephone">
+			<a><img alt="telephone" src="./images/telephone.png"></a>
+			<a class="tel-number">677 23 86 72</a>
+		</div>
+		<div class="inner">
+			<a href="https://instagram.com/losinkers/" target="_blank"><img alt="instagram" src="./images/instagram.png"></a>
+			<a href="https://twitter.com/losinkers" target="_blank"><img alt="twitter" src="./images/twitter.png"></a>
+			<a href="https://www.facebook.com/losinkers" target="_blank"><img alt="facebook" src="./images/facebook.png"></a>
+		</div>
+	</nav>
+    </section>
+  </header>
+</body>
+</html>
+		

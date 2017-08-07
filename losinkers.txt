@@ -1,0 +1,16 @@
+Panel de herramientas en www.ovh.com
+Iniciar sesión con:
+	- Usuario: gp168781-ovh
+	- Contraseña: l0s1nk3rs
+
+Para renovar las fotos
+======================
+A la izquierda Plataforma -> losinkers.com
+FTP
+Explorador FTP
+Iniciar FTP con:
+	- Usuario: losinkerhg
+	- Contraseña: JVSQmfH9N2RT
+Ir a:
+www -> images -> tattoos
+Eliminar una foto y subir otra con el mismo nombre en Jpg

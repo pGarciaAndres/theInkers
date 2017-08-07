@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Tatuajes - Los Inkers Málaga</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="author" content="Pablo Garcia">
+<link rel="author" PERFIL PERSONAL href="garciandres.15@gmail.com"/>
+<meta name="description" content="Estudio de tatuaje y piercing Los Inkers situado en Teatinos (Málaga), diseños originales espectaculares y máxima calidad en trabajo y resultados.">
+<meta name="keywords" content="Tatuajes, piercing, Málaga, Teatinos, Tattoo, Diseño, Arte" />
+<link rel="shortcut icon" href="./images/favicon.ico"/>
+<link href="http://fonts.googleapis.com/css?family=Kotta+One|Cantarell:400,700" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive-full-background-tienda.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="css/presentational-only.js"></script>
+</head>
+<script>
+	$(document).ready(function(){
+		$(".slide-content").animate({
+			right: parseInt($(".slide-content").css("right"))== 0 ?"-="+$(".slide-content").outerWidth() : 0
+		},800);
+		$(".book-button").click(function(){
+			$(".slide-content").animate({
+				right: -1500
+			},800);
+			$(".book-content").animate({
+				right: '50%',
+				marginRight: "-="+$(".book-content").width()/2
+			},800);
+			setTimeout(function(){
+				$(".slide-content").css("position","fixed");
+			},800);
+		});
+		$("#volver").click(function(){
+			$(".book-content").animate({
+				right: -1500,
+				marginRight: 0
+			},1200);
+			setTimeout(function(){
+				$(".slide-content").animate({
+					right: 0
+				},800);
+				$(".slide-content").css("position","relative");
+			},400);
+		});
+		$(".contact-form").submit(function(){
+			$(".contact-form").css("opacity", "0");
+			$(".contact-form").css("display", "none");
+			$(".camiseta").css("opacity", "0");
+			$(".camiseta").css("display", "none");
+			$(".sendConfirm").css("display", "block");
+			$(".sendConfirm").css("opacity", "1");
+		});
+		$(".slideopen").click(function() {
+                    if($(".slideopen").css("width") === "60px") { //mobile version
+			$(".slideopen").css("margin", "70px 0 0 -400px");
+			$(".slidemenu").css("margin", "10px 0 0 10px").delay(900);
+                    } else { //desktop version
+                       $(".slideopen").css("margin", "150px 0 0 -400px");
+		       $(".slidemenu").css("margin", "100px 0 0 10px").delay(900);
+                    }
+		});
+		$(".logo").click(function() {
+                    if($(".slideopen").css("width") === "60px") { //mobile version
+			$(".slidemenu").css("margin", "10px 0 0 -400px");
+			$(".slideopen").css("margin", "70px 0 0 5px").delay(900);
+                    } else { //desktop version
+                        $(".slidemenu").css("margin", "100px 0 0 -400px");
+			$(".slideopen").css("margin", "150px 0 0 5px").delay(900);
+                    }
+		});
+	});
+</script>
+<body>
+  <div class="filter"></div>
+  <header class="container">
+    <section class="content">
+	<!-- Left Menu -->
+	<div class="slideopen"></div>
+	<div class="slidemenu">
+		<div class="logo">
+			<img class="logoimage" alt="logo" src="./images/logo.jpg">
+		</div>
+		<div class="menu">
+			<ul id="main-menu" class="sf-menu">
+				<li id="menu-item-1" class="menu-item">
+					<a href="index">
+						<div class="menu-title">Inicio</div>
+						<div class="menu-subtit">bienvenidos a Los Inkers</div>
+					</a>
+				</li>
+				<li id="menu-item-2" class="menu-item">
+					<a href="artistas">
+						<div class="menu-title">Artistas</div>
+						<div class="menu-subtit">conoce a Cristian y El Subi</div>
+					</a>
+				</li>
+				<li id="menu-item-3" class="menu-item current-menu-item">
+					<a href="tienda">
+						<div class="menu-title">Tienda</div>
+						<div class="menu-subtit">mucho más que tinta</div>
+					</a>
+				</li>
+				<li id="menu-item-4" class="menu-item">
+					<a href="contacto">
+						<div class="menu-title">Contacto</div>
+						<div class="menu-subtit">estamos a tu disposición</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="slide-content">
+		<div class="store-content">
+			<div class="head">
+				<h1>Camisetas & Piercings</h1>
+				<p>Mucho más que tinta</p>
+			</div>
+			<div class="left">
+				<img class="camisetas" src="./images/modelos.png">
+				<p>Acércate por el estudio a ver nuestra colección de piercings y camisetas y llevate lo que más te guste, o también puedes reservar ahora mismo tu camiseta de Los Inkers y venir a recogerla cuando quieras</p>
+		      	<input class="book-button" type="submit" value="RESERVAR"/>
+			</div>
+			<div class="right">
+				<img class="piercing" src="./images/camisetas-2.png">
+			</div>
+		</div>
+	</div>
+	<div class="book-content">		      		
+		<h2>Camiseta original de Los Inkers</h2>
+		<h4>¡Sólo 15 Euros!</h4>
+  		<div class="book-left">
+    		<form action="bookto.php" method="post" class="contact-form">
+	      		<input type="text" name="name" class="form-input" placeholder="Nombre (obligatorio)" required />
+	  			<input type="email" name="email" class="form-input" placeholder="Email (obligatorio)" required />
+	      		<select name="size" class="form-input"/>
+	      			<option value="" disabled selected>Talla</option>
+	      			<option value="XXL">XXL</option>
+	      			<option value="XL">XL</option>
+	      			<option value="L">L</option>
+	      			<option value="M">M</option>
+	      		</select>
+	      		<select name="genre" class="form-input"/>
+	      			<option value="Chico">Chico</option>
+	      			<option value="Chica">Chica</option>
+	      		</select>
+	      		<select name="amount" class="form-input"/>
+	      			<option value="" disabled selected>Cantidad</option>
+	      			<option value="Uno">1</option>
+	      			<option value="Dos">2</option>
+	      			<option value="Tres">3</option>
+	      			<option value="Cuatro">4</option>
+	      		</select>
+	      		<input id="volver" class="contact-button" type="button" value="Volver"  />
+	      		<input class="contact-button" type="submit" value="Reservar" />
+    		</form>
+		</div>
+		<div class="book-right">
+			<img class="camiseta" src="./images/inkcamiseta.png">
+		</div>
+		<div class="sendConfirm">
+			<img class="reply" src="./images/tick.png">
+			<h2>Reserva realizada</h2>
+			<h2>Te avisaremos para que vengas a recoger tu pedido</h2>
+		</div>
+  	</div>
+	
+	<nav class="navbar">
+		<div class="telephone">
+			<a><img alt="telephone" src="./images/telephone.png"></a>
+			<a class="tel-number">677 23 86 72</a>
+		</div>
+		<div class="inner">
+			<a href="https://instagram.com/losinkers/" target="_blank"><img alt="instagram" src="./images/instagram.png"></a>
+			<a href="https://twitter.com/losinkers" target="_blank"><img alt="twitter" src="./images/twitter.png"></a>
+			<a href="https://www.facebook.com/losinkers" target="_blank"><img alt="facebook" src="./images/facebook.png"></a>
+		</div>
+	</nav>
+    </section>
+  </header>
+</body>
+</html>

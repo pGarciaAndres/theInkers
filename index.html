@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Tatuajes - Los Inkers Málaga</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="author" content="Pablo Garcia">
+<link rel="author" PERFIL PERSONAL href="garciandres.15@gmail.com"/>
+<meta name="description" content="Estudio de tatuaje y piercing Los Inkers situado en Teatinos (Málaga), diseños originales espectaculares y máxima calidad en trabajo y resultados.">
+<meta name="keywords" content="Tatuajes, piercing, Málaga, Teatinos, Tattoo, Diseño, Arte" />
+<link rel="shortcut icon" href="./images/favicon.ico"/>
+<link href="http://fonts.googleapis.com/css?family=Kotta+One|Cantarell:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive-full-background-inicio.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="css/presentational-only.js"></script>
+<script>
+	$(document).ready(function(){
+		$(".slideopen").click(function() {
+                    if($(".slideopen").css("width") === "60px") { //mobile version
+			$(".slideopen").css("margin", "70px 0 0 -400px");
+			$(".slidemenu").css("margin", "10px 0 0 10px").delay(900);
+                    } else { //desktop version
+                       $(".slideopen").css("margin", "150px 0 0 -400px");
+		       $(".slidemenu").css("margin", "100px 0 0 10px").delay(900);
+                    }
+		});
+		$(".logo").click(function() {
+                    if($(".slideopen").css("width") === "60px") { //mobile version
+			$(".slidemenu").css("margin", "10px 0 0 -400px");
+			$(".slideopen").css("margin", "70px 0 0 5px").delay(900);
+                    } else { //desktop version
+                        $(".slidemenu").css("margin", "100px 0 0 -400px");
+			$(".slideopen").css("margin", "150px 0 0 5px").delay(900);
+                    }
+		});
+	});
+</script>
+</head>
+<body>
+  <div class="filter"></div>
+  <header class="container">
+    <section class="content">
+	<!-- Left Menu -->
+	<div class="slideopen"></div>
+	<div class="slidemenu">
+		<div class="logo">
+			<img class="logoimage" alt="logo" src="./images/logo.jpg">
+		</div>
+		<div class="menu">
+			<ul id="main-menu" class="sf-menu">
+				<li id="menu-item-1" class="menu-item current-menu-item">
+					<a href="index">
+						<div class="menu-title">Inicio</div>
+						<div class="menu-subtit">bienvenidos a Los Inkers</div>
+					</a>
+				</li>
+				<li id="menu-item-2" class="menu-item">
+					<a href="artistas">
+						<div class="menu-title">Artistas</div>
+						<div class="menu-subtit">conoce a Cristian y El Subi</div>
+					</a>
+				</li>
+				<li id="menu-item-3" class="menu-item">
+					<a href="tienda">
+						<div class="menu-title">Tienda</div>
+						<div class="menu-subtit">mucho más que tinta</div>
+					</a>
+				</li>
+				<li id="menu-item-4" class="menu-item">
+					<a href="contacto">
+						<div class="menu-title">Contacto</div>
+						<div class="menu-subtit">estamos a tu disposición</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="home">
+		<div class="inkers">
+			<img class="inkersimage" alt="inkers" src="./images/marcaagua.png">
+		</div>
+		<p class="sub-title"><strong>Estudio de tatuajes y piercing</strong> <br /> diseños originales y trabajo profesional</p>
+	</div>
+	<div class="follow">
+		<img src="./images/follow.png">
+	</div>
+	<nav class="navbar">
+		<div class="telephone">
+			<a><img alt="telephone" src="./images/telephone.png"></a>
+			<a class="tel-number">677 23 86 72</a>
+		</div>
+		<div class="inner">
+			<a href="https://instagram.com/losinkers/" target="_blank"><img alt="instagram" src="./images/instagram.png"></a>
+			<a href="https://twitter.com/losinkers" target="_blank"><img alt="twitter" src="./images/twitter.png"></a>
+			<a href="https://www.facebook.com/losinkers" target="_blank"><img alt="facebook" src="./images/facebook.png"></a>
+		</div>
+	</nav>
+    </section>
+  </header>
+</body>
+</html>

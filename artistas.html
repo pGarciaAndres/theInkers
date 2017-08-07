@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Tatuajes - Los Inkers Málaga</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="author" content="Pablo Garcia">
+<link rel="author" PERFIL PERSONAL href="garciandres.15@gmail.com"/>
+<meta name="description" content="Estudio de tatuaje y piercing Los Inkers situado en Teatinos (Málaga), diseños originales espectaculares y máxima calidad en trabajo y resultados.">
+<meta name="keywords" content="Tatuajes, piercing, Málaga, Teatinos, Tattoo, Diseño, Arte" />
+<link rel="shortcut icon" href="favicon.ico"/>
+<link href="http://fonts.googleapis.com/css?family=Kotta+One|Cantarell:400,700" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive-full-background-artistas.css">
+<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="css/lightbox.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="css/presentational-only.js"></script>
+</head>
+<script>
+	$(document).ready(function(){
+		$(".slide-content").animate({
+			right: parseInt($(".slide-content").css("right"))== 0 ?"-="+$(".slide-content").outerWidth() : 0
+		},800);
+		$(".slideopen").click(function() {
+                    if($(".slideopen").css("width") === "60px") { //mobile version
+			$(".slideopen").css("margin", "70px 0 0 -400px");
+			$(".slidemenu").css("margin", "10px 0 0 10px").delay(900);
+                    } else { //desktop version
+                       $(".slideopen").css("margin", "150px 0 0 -400px");
+		       $(".slidemenu").css("margin", "100px 0 0 10px").delay(900);
+                    }
+		});
+		$(".logo").click(function() {
+                    if($(".slideopen").css("width") === "60px") { //mobile version
+			$(".slidemenu").css("margin", "10px 0 0 -400px");
+			$(".slideopen").css("margin", "70px 0 0 5px").delay(900);
+                    } else { //desktop version
+                        $(".slidemenu").css("margin", "100px 0 0 -400px");
+			$(".slideopen").css("margin", "150px 0 0 5px").delay(900);
+                    }
+		});
+	});
+</script>
+<body>
+  <div class="filter"></div>
+  <header class="container">
+    <section class="content">
+	<!-- Left Menu -->
+	<div class="slideopen"></div>
+	<div class="slidemenu">
+		<div class="logo">
+			<img class="logoimage" alt="logo" src="./images/logo.jpg">
+		</div>
+		<div class="menu">
+			<ul id="main-menu" class="sf-menu">
+				<li id="menu-item-1" class="menu-item">
+					<a href="index">
+						<div class="menu-title">Inicio</div>
+						<div class="menu-subtit">bienvenidos a Los Inkers</div>
+					</a>
+				</li>
+				<li id="menu-item-2" class="menu-item current-menu-item">
+					<a href="artistas">
+						<div class="menu-title">Artistas</div>
+						<div class="menu-subtit">conoce a Cristian y El Subi</div>
+					</a>
+				</li>
+				<li id="menu-item-3" class="menu-item">
+					<a href="tienda">
+						<div class="menu-title">Tienda</div>
+						<div class="menu-subtit">mucho más que tinta</div>
+					</a>
+				</li>
+				<li id="menu-item-4" class="menu-item">
+					<a href="contacto">
+						<div class="menu-title">Contacto</div>
+						<div class="menu-subtit">estamos a tu disposición</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="slide-content">
+		<div class="artists-content">
+			<div class="left">
+				<img class="circle" src="./images/circle-cristian.png">
+				<p class="font">Cristian</p>
+				</br>
+				<p>Destacado por el realismo en sus trabajos y por su increíble dominio del color. Genio de los tatuajes detallistas, como rostros o animales. Especialista en tatuajes de estilo oriental y cover-ups, y una majestuosa habilidad para crear verdaderas obras de arte con la aguja sobre la piel, para ver más de sus increibles diseños haz clic <a href="https://www.facebook.com/media/set/?set=a.761163260592603.1073741828.760792320629697&type=3" target="_blank">aqui</a>.</p>
+				</br>
+				<a href="images/tattoos/c1.jpg" rel="lightbox" ><img class="tattoo" src="images/tattoos/c1.jpg" /></a>
+				<a href="images/tattoos/c2.jpg" rel="lightbox" ><img class="tattoo" src="images/tattoos/c2.jpg" /></a>
+				<a href="images/tattoos/c3.jpg" rel="lightbox" ><img class="tattoo" src="images/tattoos/c3.jpg" /></a>
+				<a href="images/tattoos/c4.jpg" rel="lightbox" ><img class="tattoo" src="images/tattoos/c4.jpg" /></a>
+				<a href="images/tattoos/c5.jpg" rel="lightbox" ><img class="tattoo" src="images/tattoos/c5.jpg" /></a>
+			</div>
+			<div class="separator-line"></div>
+			<div class="right">
+				<img class="circle" src="./images/circle-subi.png">
+				<p class="font">El Subi</p>
+				</br>
+				<p>Tradición por el mito y la leyenda, dioses, demonios y otras criaturas encabezan sus mejores trabajos. Especialista en neotradicionalismo, lettering y biomecánicos. Popular por su destreza tanto con la aguja como con el lápiz, capaz de crear diseños tan originales que te dejarán con la boca abierta, encuentra sus trabajos haciendo clic <a href="https://www.facebook.com/media/set/?set=a.761282303914032.1073741829.760792320629697&type=3" target="_blank">aqui</a>.</p>
+				</br>
+				<a href="images/tattoos/s1.jpg" rel="lightbox" ><img class="tattoo" src="images/tattoos/s1.jpg" /></a>
+				<a href="images/tattoos/s2.jpg" rel="lightbox" ><img class="tattoo" src="images/tattoos/s2.jpg" /></a>
+				<a href="images/tattoos/s3.jpg" rel="lightbox" ><img class="tattoo" src="images/tattoos/s3.jpg" /></a>
+				<a href="images/tattoos/s4.jpg" rel="lightbox" ><img class="tattoo" src="images/tattoos/s4.jpg" /></a>
+				<a href="images/tattoos/s5.jpg" rel="lightbox" ><img class="tattoo" src="images/tattoos/s5.jpg" /></a>
+			</div>
+		</div>
+		
+	</div>
+	<nav class="navbar">
+		<div class="telephone">
+			<a><img alt="telephone" src="./images/telephone.png"></a>
+			<a class="tel-number">677 23 86 72</a>
+		</div>
+		<div class="inner">
+			<a href="https://instagram.com/losinkers/" target="_blank"><img alt="instagram" src="./images/instagram.png"></a>
+			<a href="https://twitter.com/losinkers" target="_blank"><img alt="twitter" src="./images/twitter.png"></a>
+			<a href="https://www.facebook.com/losinkers" target="_blank"><img alt="facebook" src="./images/facebook.png"></a>
+		</div>
+	</nav>
+    </section>
+  </header>
+</body>
+</html>

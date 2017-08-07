@@ -1,0 +1,238 @@
+/* Responsive Full Background Image Using CSS
+ * Tutorial URL: http://sixrevisions.com/css/responsive-background-image/
+*/
+body {
+  /* Location of the image */
+  background-image: url(../images/background/fondo3.jpg);
+  
+  /* Image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+  
+  /* Makes the image fixed in the viewport so that it doesn't move when 
+     the content height is greater than the image height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based on its container's size */
+  background-size: cover;
+  
+  /* Pick a solid background color that will be displayed while the background image is loading */
+  background-color:#464646;
+  
+  /* SHORTHAND CSS NOTATION
+   * background: url(background-photo.jpg) center center cover no-repeat fixed;
+   */
+}
+
+/* For mobile devices */
+@media only screen and (max-width : 767px) {
+
+  body {
+    /* The file size of this background image is 93% smaller
+     * to improve page load speed on mobile internet connections */
+    background-image: url(../images/background/fondo3-min.jpg);
+  }
+
+  .piercing {
+    position: relative;
+    float: left;
+    width: 90%;
+    padding-top: 20px;
+    right: 0;
+  }
+
+  .camisetas {
+    width: 100%;
+  }
+
+  .head h1 {
+    font-size: 20px !important;
+    line-height: 30px;
+  }
+
+  .book-content h2 {
+    font-size: 0.9em;
+  }
+
+  .book-content h4 {
+    font-size: 0.9em;
+  }
+
+  .slideopen {
+    margin: 70px 0 0 5px;
+  }
+
+  .slidemenu {
+    margin: 10px 0 0 -400px;
+    position: fixed;
+  }
+
+  .logo img {
+    max-width: 210px;
+  }
+
+  .sf-menu {
+    width: 210px;
+  }
+
+  .telephone img {
+    width: 25px;
+    margin-top: 4px;
+  }
+
+  .tel-number {
+    font-size: 12px;
+  }
+
+  .slide-content {
+    position: relative;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .left p {
+    font-size: 15px;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .right p {
+    font-size: 15px;
+  }
+
+  .book-left {
+    width: 70%;
+  }
+
+  .book-right {
+    width: 30%;
+  }
+
+  .book-content {
+      display: block;
+      right: -1500px;
+      width: 300px;
+      margin: 5% 0 0 -150px;
+  }
+
+  .book-button {
+    display: block;
+    margin: 20px auto 20px auto;
+  }
+}
+
+/* For tablet devices */
+@media only screen and (max-width : 1023px) and (min-width : 768px) {
+
+  .book-content h2 {
+    font-size: 1.2em;
+  }
+
+  .book-content h4 {
+    font-size: 1.2em;
+  }
+
+  .piercing {
+    position: relative;
+    float: left;
+    width: 80%;
+    padding-top: 20px;
+  }
+
+  .camisetas {
+    width: 100%;
+  }
+ 
+  .head h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .slideopen {
+    margin: 70px 0 0 5px;
+  }
+
+  .slidemenu {
+    margin: 10px 0 0 -400px;
+    position: fixed;
+  }
+
+  .logo img {
+    max-width: 210px;
+  }
+
+  .sf-menu {
+    width: 210px;
+  }
+
+  .telephone img {
+    width: 25px;
+    margin-top: 4px;
+  }
+
+  .tel-number {
+    font-size: 15px;
+  }
+
+  .slide-content {
+    position: relative;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .left p {
+    font-size: 20px;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .right p {
+    font-size: 20px;
+  }
+
+  .book-content {
+    display: block;
+    right: -1500px;
+    width: 400px;
+    margin: 5% 0 0 -200px;
+  }
+
+  .book-left {
+    width: 60%;
+  }
+
+  .book-right {
+    width: 40%;
+  }
+
+  .book-button {
+    display: block;
+    margin: 20px auto 20px auto;
+
+  }
+}
+
+/* For desktop and laptop devices */
+@media only screen and (min-width : 1024px) {
+  .slideopen {
+    width: 80px;
+    height: 80px;
+    background-size: 80px 80px;
+    margin: 150px 0 0 -400px;
+  }
+
+  .slidemenu {
+    margin: 100px 0 0 10px;
+    position: absolute;
+  }
+}

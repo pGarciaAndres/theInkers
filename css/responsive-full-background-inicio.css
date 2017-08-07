@@ -1,0 +1,149 @@
+/* Responsive Full Background Image Using CSS
+ * Tutorial URL: http://sixrevisions.com/css/responsive-background-image/
+*/
+body {
+  /* Location of the image */
+  background-image: url(../images/background/fondo1.jpg);
+  
+  /* Image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+  
+  /* Makes the image fixed in the viewport so that it doesn't move when 
+     the content height is greater than the image height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based on its container's size */
+  background-size: cover;
+  
+  /* Pick a solid background color that will be displayed while the background image is loading */
+  background-color:#464646;
+  
+  /* SHORTHAND CSS NOTATION
+   * background: url(background-photo.jpg) center center cover no-repeat fixed;
+   */
+}
+
+/* For mobile devices */
+@media only screen and (max-width : 767px) {
+
+  body {
+    /* The file size of this background image is 93% smaller
+     * to improve page load speed on mobile internet connections */
+    background-image: url(../images/background/fondo1-min.jpg);
+  }
+
+  .inkers img {
+    width: 300px;
+  }
+
+  .home {
+    margin-left: -150px;
+  }
+
+  .sub-title {
+    font-size: 13px;
+  }
+
+  .slideopen {
+    margin: 70px 0 0 5px;
+  }
+
+  .slidemenu {
+    margin: 10px 0 0 -400px;
+    position: fixed;
+  }
+
+  .logo img {
+    max-width: 210px;
+  }
+
+  .sf-menu {
+    width: 210px;
+  }
+
+  .telephone img {
+    width: 25px;
+    margin-top: 4px;
+  }
+
+  .tel-number {
+    font-size: 15px;
+  }
+
+  .follow img {
+    width: 150px;
+  }
+
+  .follow img:hover {
+    width: 160px;
+  }
+}
+
+/* For tablet devices */
+@media only screen and (max-width : 1023px) and (min-width : 768px) {
+
+  .inkers img {
+    width: 300px;
+  }
+
+  .home {
+    margin-left: -150px;
+  }
+
+  .sub-title {
+    font-size: 13px;
+  }
+
+  .slideopen {
+    margin: 70px 0 0 5px;
+  }
+
+  .slidemenu {
+    margin: 10px 0 0 -400px;
+    position: fixed;
+  }
+
+  .logo img {
+    max-width: 210px;
+  }
+
+  .sf-menu {
+    width: 210px;
+  }
+
+  .telephone img {
+    width: 25px;
+    margin-top: 4px;
+  }
+
+  .tel-number {
+    font-size: 15px;
+  }
+
+  .follow img {
+    width: 250px;
+  }
+
+  .follow img:hover {
+    width: 260px;
+  }
+
+}
+
+/* For desktop and laptop devices */
+@media only screen and (min-width : 1024px) {
+  .slideopen {
+    width: 80px;
+    height: 80px;
+    background-size: 80px 80px;
+    margin: 150px 0 0 -400px;
+  }
+
+  .slidemenu {
+    margin: 100px 0 0 10px;
+    position: absolute;
+  }
+}
